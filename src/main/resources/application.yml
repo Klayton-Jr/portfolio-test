@@ -1,0 +1,21 @@
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+# Configurações do Banco de Dados PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/portfoliodb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+# Configurações do Hibernate
+jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: update
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
